@@ -1,0 +1,134 @@
+/*********** COLORES Y LETRAS ************/
+/*---------------------------------------*/
+
+    /*** BACKGROUNDS ***/
+$body_bgColor:rgb(250, 252, 252);
+$navbar_bgColor:rgba(133, 130, 119,0.5);
+$footer_bgColor:rgba(133, 130, 119,0.5);
+$div_bgColor: rgba(133, 130, 119,0.8);
+
+    /*** TEXTOS ***/
+$textColor:rgb(38, 37, 34);
+$linksColor:rgb(0,0,0);
+
+    /*** LETRAS ***/
+$p_fontFamily:'Nanum Gothic', sans-serif;
+$h1_fontFamily:'Orelega One';
+
+body{
+    background-color: $body_bgColor;
+}
+footer{
+    background-color: $footer_bgColor;
+}
+.div_bgColor{
+    background-color: $div_bgColor;
+}
+.navbar{
+    background-color: $navbar_bgColor;
+}
+p, ul{
+    color:$textColor;
+    font-family:$p_fontFamily;
+}
+a{
+    color:$linksColor;
+}
+h1{
+    font-family:$h1_fontFamily;
+}
+
+/*---------------------------------------*/
+/*********** COLORES Y LETRAS ************/
+
+/*********** MARGINS, PADDINGS Y RETOQUES ************/
+/*---------------------------------------------------*/
+
+a{
+    text-decoration: none;
+    transition: color .4s;
+    &:hover,
+    &:focus {
+        color: white;
+    }
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.margint50{
+    margin-top:50px;
+}
+
+.button_border{
+    border:none;
+}
+
+.p_paddingt_lineh{
+    padding-top:100px;
+    line-height: 2em ;
+}
+
+.divSeparador{
+    height:30px;
+    width:100%;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+    
+/*---------------------------------------------------*/
+/*********** MARGINS, PADDINGS Y RETOQUES ************/
+
+
+
+/*********** MEDIAS QUERIES ************/
+/*-------------------------------------*/
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+}
+
+@media only screen and(max-width:768px){
+    *{
+        padding:0;
+        margin:0;
+    }
+    .mtMobile{
+        margin-top:20px;
+    }
+    .mbMobile{
+        margin-bottom:30px;
+    }
+    .borderMobile{
+        border-right: 1px solid;
+    }
+    .p_paddingt_lineh{
+        padding:0;
+    }
+    .primeroFoto .primero{
+        order:1;
+    }
+    .primeroFoto .segundo{
+        order:2;
+    }
+}
+
+/*-------------------------------------*/
+/*********** MEDIAS QUERIES ************/
